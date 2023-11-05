@@ -1,0 +1,38 @@
+
+classDiagram
+ConcreateLED ..|> LED : implements
+LEDDecorator ..|> LED : implements
+Intensity --|> LEDDecorator : extends
+Color --|> LEDDecorator : extends
+LEDDecorator *-- LED : extends
+class LED{
+<>
++render()
++delay()
+}
+class ConcreateLED{
++ConcreateLED()
++render()
++delay()
+}
+class LEDDecorator{
+LED wrappedLED
+LEDDecorator(LED)
++render()
++delay()
+}
+class Intensity{
++ConcreateIntensity(LED)
++render()
++delay()
++setPixelColourHSB(int pixel, float hue, float saturation, float brightness)
+}
+class Color{
+Object newState
++ConcreateColor(Component)
++render()
++delay()
++setPixelColourRGB(int pixel, int red, int green, int blue)
+}
+
+this was the original design but I went down a different route.
