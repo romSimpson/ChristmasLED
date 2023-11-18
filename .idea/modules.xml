@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AudioConverter/AudioConverter.iml" filepath="$PROJECT_DIR$/AudioConverter/AudioConverter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ChristmasLED.iml" filepath="$PROJECT_DIR$/.idea/ChristmasLED.iml" />
     </modules>
   </component>
